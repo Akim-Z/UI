@@ -4,14 +4,24 @@
 	--color-primary-dark: #31261A;
 	--color-primary-light: #F9F9F9;
 }
+
 /* global */
 body {
 	color: var(--color-primary-dark);
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+address {
+	font-style: normal;
 }
 
 ul {
 	list-style-type: none;
 }
+
 /* Button  */
 .button {
 	background-color: var(--color-brand-light);
@@ -19,38 +29,98 @@ ul {
 	color: var(--color-primary-light);
 	cursor: pointer;
 	border-radius: 8px;
+	font-weight: 600;
 }
 
 .button:hover {
 	background-color: transparent;
 	color: var(--color-brand-dark);
-}	
+}
+
 /* Link */
 .link {
 	color: var(--color-primary-light);
+	text-decoration: none;
 }
 
 .link:hover {
 	color: var(--color-brand-light);
+	font-weight: 600;
 }
+
 /* Hero section */
 .hero-titel {
 	color: var(--color-primary-light);
+	text-align: center;
+	font-size: 128px;
+	font-weight: 900;
 }
 
-.hero-titel .acsent{
+.hero-titel .acsent {
 	color: var(--color-brand-light);
 }
+
 /* Advantages section */
 .advantages-list {
 	color: var(--color-primary-light);
 	background-color: var(--color-brand-light);
 }
 
+.advantages-item {
+	font-size: 20px;
+	font-weight: 300;
+}
+
 .section-titel {
-	color: var(--color-primary-dark);
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 1.3;
 }
 
 .section-titel .acsent-dark {
 	color:var(--color-brand-dark);
+}
+
+/* Traditions section */
+.tradition-text .brand {
+	color: var(--color-brand-light);
+	font-weight: 600;
+}
+
+.tradition-text .uppercase {
+	text-transform: uppercase;
+}
+
+/* Coockers-section */
+.coockers-titel {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+/* Formats section */
+.format-titel {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.format-text {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+/* Footer */
+.address-link {
+	color: var(--color-primary-light);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.address-link:hover {
+	color: var(--color-brand-light);
+	text-decoration: none;
+}
+
+.address-copyright {
+	color: #A18268;
+	font-size: 14px;
 }
