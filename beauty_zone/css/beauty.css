@@ -1,0 +1,186 @@
+/* poppins-300 */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-400 */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900*/
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	--color-brand-light: #2B7FFF;
+	--color-brand-dark: #011C44;
+	--color-primary-white: #FFFFFF;
+	--color-secondary-yellow: #FFD02B;
+}
+
+/* global */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.container {
+	margin:0 auto;
+	max-width: 1288px;
+	padding: 0 24px;
+	width: 100%;
+}
+
+address {
+	font-style: normal;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.section {
+	margin: 48px 0;
+}
+
+.section-titel {
+	font-size: 64px;
+	font-weight: 700;
+}
+
+.section-titel .acsent {
+	color: var(--color-brand-light);
+}
+
+/* Links */
+.link {
+	text-decoration: none;
+	color: var(--color-brand-dark);
+}
+
+.logo {
+	color: var(--color-brand-light);
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.link.header {
+	font-size: 18px;
+}
+
+.link.footer {
+	font-size: 16px;
+}
+
+.link:hover {
+	color: var(--color-brand-light);
+/*	font-weight: 700;*/
+}
+
+/* Button */
+.button {
+	padding: 16px 32px;
+	border: 2px solid var(--color-brand-light);
+	border-radius: 32px;
+	font-size: 18px;
+	font-weight: 600;
+	background-color: var(--color-brand-light);
+	color: var(--color-primary-white);
+	cursor: pointer	;
+}
+
+.button:hover {
+	background-color: transparent;
+	border: 2px solid var(--color-brand-light);
+	color: var(--color-brand-dark);
+}
+
+/* Header */
+.header-container {
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+}
+
+.header-nav {
+	display: flex;
+	gap: 40px;
+}
+
+.header-menu {
+	display: flex;
+	gap: 64px;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.header-icons {
+	display: flex;
+	gap: 40px;
+}
+
+/* Hero section */
+.hero-section {
+	background-image: url("../images/hero-section-background.jpg");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: cover bottom;
+}
+
+.hero-titel {
+	color: var(--color-brand-light);
+	font-size: 140px;
+	font-weight: 700;
+	line-height: 114px;
+}
+
+/* Footer */
+.footer {
+	color: var(--color-primary-white);
+	background-color: var(--color-brand-dark);
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copy-right{
+	color: #747272;
+	font-size: 13px;
+}
+
+
