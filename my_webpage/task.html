@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style_me.css">
+
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e147c2776e/UntitledProject/style-svg.css">
+    <script defer src="https://i.icomoon.io/public/temp/e147c2776e/UntitledProject/svgxuse.js"></script>
     <title>Сучасна пекарня</title>
 </head>
 
@@ -78,10 +81,11 @@
         <!-- 4 -->
         <section class="section" id="coockers-section">
             <div class="container">
-                <h2 class="coockers-titel section-titel">Наші найкрщі <span class="acsent-dark">Шеф-кухарі</span></h2>
+                <h2 class="coockers-titel section-titel centered">Наші найкрщі <span class="acsent-dark">Шеф-кухарі</span></h2>
                 <ul>
                     <li>
                         <article>
+                            <img class="coocker-photo" src="./images/nastia-chef.jpg" alt="a woman-chef">
                             <h3 class="coocker-titel">Настя</h3>
                             <p>Привіт, я Настя!</p>
                             <p>
@@ -94,7 +98,8 @@
                     </li>
                     <li>
                         <article>
-                            <h3>Влад</h3>
+                            <img class="coocker-photo" src="./images/vlad-chef.jpg" alt="a man-chef">
+                            <h3 class="coocker-titel">Влад</h3>
                             <p>Привіт, я Влад!</p>
                             <p>
                                 Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
@@ -109,7 +114,7 @@
         <!-- 5 -->
         <section class="section" id="format-section">
             <div class="container">
-                <h2 class="formats-titel section-titel">Формати</h2>
+                <h2 class="formats-titel section-titel centered">Формати</h2>
                 <ul class="formats-list">
                     <li class="formats-item">
                         <article class="format-card">
@@ -180,11 +185,35 @@
             </nav>
             <address>
                 <ul>
-                    <li><a class="address-link" href="tel:+ 380960000007">+ 38 (096) 000 00 07</a></li>
-                    <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                    <li><a class="address-link" href="https://g.co/kgs/V455hqf" target="_blank">Україна, м. Київ, вул. Січових Стрільців 54</a></li>
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">instagram</a></li>
+                    <li>
+                        <a class="address-link" href="tel:+ 380960000007">
+                        + 38 (096) 000 00 07
+                        </a>
+                    </li>
+                    <li>
+                        <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a class="address-link" href="https://g.co/kgs/V455hqf" target="_blank">
+                        Україна, м. Київ, вул. Січових Стрільців 54
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <!-- class icon added - nithing changed(sometimes icon was there) original class address-icon changed to icon-facebook -->
+                            <svg class="icon icon-facebook" width="32" height="32">
+                                <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="address-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-arrow-l"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
                 <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
                 <p class="address-copyright">&copy;2024 Дані захищені</p>
