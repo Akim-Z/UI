@@ -102,33 +102,37 @@
         <!-- 4 -->
         <section class="section" id="coockers-section">
             <div class="container">
-                <h2 class="coockers-titel section-titel centered">Наші найкрщі <span class="acsent-dark">Шеф-кухарі</span></h2>
+                <h2 class="coockers-titel section-titel centered">Наші найкращі<br> <span class="acsent-dark">шеф-кухарі</span></h2>
                 <ul class="coockers-list">
                     <li class="coockers-item">
-                        <article>
+                        <article class="coocker-card">
                             <img class="coocker-photo" src="./images/nastia-chef.jpg" alt="a woman-chef">
                             <div>
                                 <h3 class="coocker-titel">Настя</h3>
-                                <p>Привіт, я Настя!</p>
-                                <p>
-                                    Вже 10 років, я втілюю
-                                    у життя цікаві та смачні ідеї.
-                                </p>
-                                <p>Я випічу для вас
-                                    найсмачніщі вироби!</p>
+                                <div class="coocker-text">
+                                    <p>Привіт, я Настя!</p>
+                                    <p>
+                                        Вже 10 років, я втілюю<br>
+                                        у життя цікаві та смачні ідеї.
+                                    </p>
+                                    <p>Я випічу для вас <br>
+                                        найсмачніщі вироби!</p>
+                                </div>
                             </div>
                         </article>
                     </li>
                     <li class="coockers-item">
-                        <article>
+                        <article class="coocker-card">
                             <img class="coocker-photo" src="./images/vlad-chef.jpg" alt="a man-chef">
                             <div>
                                 <h3 class="coocker-titel">Влад</h3>
-                                <p>Привіт, я Влад!</p>
-                                <p>
-                                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                                </p>
-                                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                <div class="coocker-text">
+                                    <p>Привіт, я Влад!</p>
+                                    <p>
+                                        Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
+                                    </p>
+                                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                </div>
                             </div>
                         </article>
                     </li>
@@ -140,7 +144,14 @@
         <section class="section" id="format-section">
             <div class="container">
                 <h2 class="formats-titel section-titel centered">Формати</h2>
-                <ul class="formats-list">
+                <div class="formats-container">
+                    <button class="carousel-button" type="button">
+                        <svg class="icon">
+                            <use xlink:href="#icon-arrow-l">
+                            </use>
+                        </svg>
+                    </button>
+                    <ul class="formats-list">
                     <li class="formats-item">
                         <article class="format-card">
                             <h3 class="format-titel">Walrus</h3>
@@ -174,77 +185,95 @@
                             </div>
                         </article>
                     </li>
-                </ul>
+                    </ul>
+                    <button class="carousel-button" type="button">
+                        <svg class="icon">
+                            <use xlink:href="#icon-arrow-r">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
         <!-- 6 -->
-        <section class="section" id="contact-section">
+        <section class="contact-section section" id="contact-section">
             <div class="container">
-                <h2 class="section-titel">Приєднуйся до мережі пекарень</h2>
-                <button></button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352837!2d30.48869837636955!3d50.45667757159329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1731681247754!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h2 class="contact-titel section-titel">Приєднуйся до мережі пекарень</h2>
+                        <p>Заповни форму, щоб ми зв'язалися з тобою</p>
+                        <button></button>
+                    </div>
+                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352837!2d30.48869837636955!3d50.45667757159329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1731681247754!5m2!1sde!2sde" width="600" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <nav>
-                <a href="./task.html">
-                    <img src="./images/logo.svg" alt="logo">
-                </a>
-                <ul>
-                    <li>
-                        <a class="link" href="#traditions-section">Наші традиції</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#coockers-section">Шеф-кухарі</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#formats-section">Формати</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contact-section">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li>
-                        <a class="address-link" href="tel:+ 380960000007">
-                        + 38 (096) 000 00 07
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo"> 
+                        <a href="./task.html">
+                            <img src="./images/logo.svg" alt="logo">
                         </a>
-                    </li>
-                    <li>
-                        <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a class="address-link" href="https://g.co/kgs/V455hqf" target="_blank">
-                        Україна, м. Київ, вул. Січових Стрільців 54
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <!-- other variant works with server only if you want connect sprite from other file - you need a server -->
-                            <svg class="icon">
-                                <use xlink:href="#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <svg class="icon">
-                                <use xlink:href="#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
-                <p class="address-copyright">&copy;2024 Дані захищені</p>
-            </address>
+                    </div>
+                    <ul class="footer-menu">
+                        <li>
+                            <a class="link" href="#traditions-section">Наші традиції</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#coockers-section">Шеф-кухарі</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#formats-section">Формати</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contact-section">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer-address">
+                    <ul class="address-list">
+                        <li>
+                            <a class="address-link" href="tel:+ 380960000007">
+                            + 38 (096) 000 00 07
+                            </a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="https://g.co/kgs/V455hqf" target="_blank">
+                            Україна, м. Київ, вул. Січових Стрільців 54
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!-- other variant works with server only if you want connect sprite from other file - you need a server -->
+                                <svg class="icon">
+                                    <use xlink:href="#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="address-info">
+                        <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
+                        <p class="address-copyright">&copy;2024 Дані захищені</p>
+                    </div>
+                </address>
+            </div>
         </div>
     </footer>
 </body>
