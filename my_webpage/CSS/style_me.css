@@ -247,6 +247,15 @@ ul {
 	content: '';
 }
 
+.coockers-list {
+	display: flex;
+}
+
+.coockers-item {
+	flex-basis: calc((100% - 30px) / 2);
+	gap: 30px;
+}
+
 .coocker-titel {
 	margin-bottom: 16px;
 	font-size: 40px;
@@ -306,8 +315,8 @@ ul {
 
 .address-link {
 	color: var(--color-primary-light);
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 16px;	
+	text-decoration: none;
 }
 
 .address-link:hover {
@@ -315,7 +324,9 @@ ul {
 	text-decoration: none;
 }
 
-.address-icon {
+.icon {
+	width: 32px;
+	height: 32px;
 	fill: var(--color-primary-light);
 }
 
