@@ -1,0 +1,271 @@
+@import './utils/fonts';
+
+
+
+@import './utils/variables';
+
+
+
+@import './base';
+
+
+
+@import './utils/utils';
+
+.section {
+
+	padding: 48px 0;
+
+}
+
+.container {
+
+	margin: 0 auto;
+
+	padding: 0 24px;
+
+	width: 100%;
+
+	max-width: 1288px;
+
+}
+
+
+
+@import './components/buttons';
+
+
+
+@import './components/links';
+
+
+
+/* Header */
+
+@import './components/header';
+
+
+
+/* Hero section */
+
+@import './components/hero-section';
+
+
+
+/* Advantages section */
+
+@import './components/advantages-section';
+
+
+
+/* Traditions section */
+
+@import './components/traditions-section';
+
+
+
+/* Coockers-section */
+
+@import './components/coockers-section';
+
+
+
+/* Formats section */
+
+@import './components/formats-section';
+
+
+
+/* Contact section */
+
+@import './components/contact-section';
+
+
+
+/* Footer */
+
+@import './components/footer';
+
+
+
+/* Modal */
+
+.backdrop {
+
+	position: fixed;
+
+	top: 0;
+
+	bottom: 0;
+
+	right: 0;
+
+	left: 0;
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 0.5);
+
+	padding: 20px 0;
+
+	transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+
+
+.backdrop.is-hidden {
+
+	opacity: 0;
+
+	visibility: hidden;
+
+	pointer-events: none;
+
+}
+
+
+
+.modal {
+
+	position: relative;
+
+	padding: 128px;
+
+	width: 100%;
+
+	max-width: 880px;
+
+	height: 100%;
+
+	max-height: 880px;
+
+	background-color: var(--color-primary-light);
+
+	border-radius: 32px;
+
+	overflow-y: auto;
+
+}
+
+
+
+.modal-btn-close {
+
+	position: absolute;
+
+	top: 40px;
+
+	right: 40px;
+
+}
+
+
+
+/* Form */
+
+.form-field {
+
+	margin-bottom: 32px;
+
+}
+
+
+
+.form-label {
+
+	display: block;
+
+}
+
+
+
+.form-input{
+
+	padding: 14px 42px;
+
+	width: 100%;
+
+	font-size: 16px;
+
+	line-height: 1.17;
+
+	border: 1px solid var(--color-secondary-dark);
+
+	border-radius: 8px;
+
+	background-color: transparent;
+
+}
+
+
+
+.form-input:focus {
+
+	border-color: var(--color-brand);
+
+	outline: none;
+
+}
+
+
+
+.form-input::placeholder {
+
+	color: var(--color-secondary-dark);
+
+	font-size: 16px;
+
+	line-height: 1.17;
+
+}
+
+
+
+.form-input:focus::placeholder {
+
+	color: var(--color-primary-dark);
+
+}
+
+
+
+.form-button {
+
+	display: block;
+
+	margin: 0 auto 24px;
+
+}
+
+
+
+.form-terms {
+
+	margin: 0 auto;
+
+	max-width: 220px;
+
+	font-weight: 500;
+
+	font-size: 12px;
+
+	line-height: 1.5;
+
+	text-align: center;
+
+}
+
+
+
+.form-terms-link {
+
+	color: var(--color-primary-dark);
+
+	text-underline-offset: 2px;
+
+}
