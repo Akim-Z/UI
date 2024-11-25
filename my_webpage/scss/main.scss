@@ -12,23 +12,9 @@
 
 @import './utils/utils';
 
-.section {
+@import './layouts/section';
 
-	padding: 48px 0;
-
-}
-
-.container {
-
-	margin: 0 auto;
-
-	padding: 0 24px;
-
-	width: 100%;
-
-	max-width: 1288px;
-
-}
+@import './layouts/container';
 
 
 
