@@ -1,84 +1,40 @@
 @import './utils/fonts';
 
-
-
 @import './utils/variables';
 
+@import './utils/utils';
+
+@import './utils/texts';
 
 
 @import './base';
 
 
+@import './components/links';
 
-@import './utils/utils';
+@import './components/buttons';
+
 
 @import './layouts/section';
 
 @import './layouts/container';
 
-
-
-@import './components/buttons';
-
-
-
-@import './components/links';
-
-
-
-/* Header */
-
 @import './layouts/header';
-
-
-
-/* Hero section */
 
 @import './layouts/hero-section';
 
-
-
-/* Advantages section */
-
 @import './layouts/advantages-section';
-
-
-
-/* Traditions section */
 
 @import './layouts/traditions-section';
 
-
-/* Coockers-section */
-
 @import './layouts/coockers-section';
-
-
-
-/* Formats section */
 
 @import './layouts/formats-section';
 
-
-
-/* Contact section */
-
 @import './layouts/contact-section';
-
-
-
-/* Footer */
 
 @import './layouts/footer';
 
-
-
-/* Modal */
-
 @import './layouts/modal';
-
-
-
-/* Form */
 
 @import './layouts/forms';
