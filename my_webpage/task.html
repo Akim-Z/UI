@@ -11,6 +11,9 @@
 <body>
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
+        <symbol id="icon-burger-menu" viewBox="0 0 46 32">
+            <path d="M45.714 29.726c0 1.257-1.019 2.274-2.274 2.274h-18.309c-0.603 0-1.182-0.24-1.608-0.666s-0.666-1.005-0.666-1.608c0-0.603 0.24-1.182 0.666-1.608s1.005-0.666 1.608-0.666h18.309c1.257 0 2.274 1.017 2.274 2.274zM45.714 16c0 1.257-1.019 2.274-2.274 2.274h-41.166c-0.603 0-1.182-0.24-1.608-0.666s-0.666-1.005-0.666-1.608c0-0.603 0.24-1.182 0.666-1.608s1.005-0.666 1.608-0.666h41.166c1.257 0 2.274 1.019 2.274 2.274zM43.44 4.549c0.603 0 1.182-0.24 1.608-0.666s0.666-1.005 0.666-1.608c0-0.603-0.24-1.182-0.666-1.608s-1.005-0.666-1.608-0.666h-27.451c-0.299 0-0.594 0.059-0.87 0.173s-0.527 0.282-0.738 0.493c-0.211 0.211-0.379 0.462-0.493 0.738s-0.173 0.572-0.173 0.87c0 0.299 0.059 0.594 0.173 0.87s0.282 0.527 0.493 0.738c0.211 0.211 0.462 0.379 0.738 0.493s0.572 0.173 0.87 0.173h27.451z"></path>
+        </symbol>
         <symbol id="icon-facebook" viewBox="0 0 32 32">
             <path d="M0 16c0-8.837 7.163-16 16-16s16 7.163 16 16c0 8.837-7.163 16-16 16s-16-7.163-16-16zM17.668 25.408v-8.705h2.403l0.319-3h-2.721l0.004-1.501c0-0.782 0.074-1.202 1.198-1.202h1.502v-3h-2.403c-2.887 0-3.903 1.455-3.903 3.902v1.801h-1.799v3h1.799v8.705h3.602z"></path>
         </symbol>
@@ -53,7 +56,18 @@
                     </ul>
                 </nav>
                 <!-- call -->
-                <button class="button modal__btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__button button modal__btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <svg class="header__icon">
+                        <use xlink:href="#icon-burger-menu">
+                        </use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -63,6 +77,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-section__titel"><span class="text-brand">Сучасна</span> пекарня</h1>
+                <button class="hero-section__button button modal__btn-open" type="button">Замовити дзвінок</button>
             </div>
         </section>
 
@@ -193,7 +208,7 @@
         </section>
 
         <!-- 6 -->
-        <section class="contact-section section" id="contact-section">
+        <!-- <section class="contact-section section" id="contact-section">
             <div class="container">
                 <div class="contact-section__container">
                     <div class="contact-form">
@@ -222,18 +237,18 @@
                     <iframe class="contact-section__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352837!2d30.48869837636955!3d50.45667757159329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1731681247754!5m2!1sde!2sde" width="600" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container">
-                <nav class="footer-nav">
-                    <div class="footer-logo"> 
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <div class="footer__logo"> 
                         <a href="./task.html">
                             <img src="./images/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <ul class="footer-menu">
+                    <ul class="footer__menu">
                         <li>
                             <a class="link" href="#traditions-section">Наші традиції</a>
                         </li>
@@ -248,19 +263,19 @@
                         </li>
                     </ul>
                 </nav>
-                <address class="footer-address">
-                    <ul class="address-list">
+                <address class="footer__address">
+                    <ul class="footer__address-list">
                         <li>
-                            <a class="address-link" href="tel:+ 380960000007">
+                            <a class="footer__address-link" href="tel:+ 380960000007">
                             + 38 (096) 000 00 07
                             </a>
                         </li>
                         <li>
-                            <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com
+                            <a class="footer__address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com
                             </a>
                         </li>
                         <li>
-                            <a class="address-link" href="https://g.co/kgs/V455hqf" target="_blank">
+                            <a class="footer__address-link" href="https://g.co/kgs/V455hqf" target="_blank">
                             Україна, м. Київ, вул. Січових Стрільців 54
                             </a>
                         </li>
@@ -282,9 +297,9 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="address-info">
-                        <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
-                        <p class="address-copyright">&copy;2024 Дані захищені</p>
+                    <div class="footer__address-info">
+                        <a class="footer__address-link" href="#" target="_blank">Політика конфеденційності</a>
+                        <p class="footer__address-copyright">&copy;2024 Дані захищені</p>
                     </div>
                 </address>
             </div>
@@ -323,4 +338,5 @@
     </div>
 </body>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </html>
