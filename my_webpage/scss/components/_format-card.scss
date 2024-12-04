@@ -7,7 +7,6 @@
 	height: 444px;
 	background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
 	border-radius: 16px;
-	transition: transform 0.3s;
 
 	&__image {
 		position: absolute;
@@ -19,10 +18,6 @@
 		border-radius: 16px;
 	}
 
-	&:hover {
-		transform: scale(1.05);
-		cursor: pointer;
-		}
 
 	&__titel {
 		font-size: 24px;
