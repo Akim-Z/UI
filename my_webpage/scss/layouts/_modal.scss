@@ -10,6 +10,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 20px;
 	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 2;
 
 	&.is-hidden {
 		opacity: 0;
@@ -38,6 +39,8 @@
 		position: absolute;
 		top: 40px;
 		right: 40px;
+		border: none;
+    background-color: transparent;
 	}
 
 	&__form-field {
