@@ -22,6 +22,9 @@
             <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l8 8 8-8"></path>
             <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 24l8-8 8 8"></path>
         </symbol>
+        <symbol id="icon-cross" viewBox="0 0 32 32">
+            <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+        </symbol>
         <symbol id="icon-arrow" viewBox="0 0 37 32">
             <path d="M29.193 15.099c0.498 0.498 0.498 1.305 0 1.802l-8.109 8.109c-0.498 0.498-1.304 0.498-1.802 0s-0.498-1.305 0-1.802l7.208-7.208-7.208-7.208c-0.498-0.498-0.498-1.304 0-1.802s1.304-0.498 1.802 0zM28.292 17.275h-21.358v-2.548h21.358z"></path>
         </symbol>
@@ -66,8 +69,30 @@
                 </button>
                 <div class="mobile-menu">
                     <button class="mobile-menu__btn-close menu-btn-close" type="button">
-                        Close
+                        <svg class="icon">
+                            <use xlink:href="#icon-cross">
+                            </use>
+                        </svg>
                     </button>
+                    <nav class="mobile-menu__nav">
+                        <a href="./task.html">
+                            <img src="./images/logo.svg" alt="logo">
+                        </a>
+                        <ul class="mobile-menu__menu">
+                            <li>
+                                <a class="link mobile-menu__link" href="#traditions-section">Наші традиції</a>
+                            </li>
+                            <li>
+                                <a class="link mobile-menu__link" href="#coockers-section">Шеф-кухарі</a>
+                            </li>
+                            <li>
+                                <a class="link mobile-menu__link" href="#format-section">Формати</a>
+                            </li>
+                            <li>
+                                <a class="link mobile-menu__link" href="#contact-section">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -353,8 +378,8 @@
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal__btn-close" type="button">
-                <svg class="icon">
-                    <use xlink:href="#icon-close">
+                <svg class="icon icon-cross">
+                    <use xlink:href="#icon-cross">
                     </use>
                 </svg>
             </button>
